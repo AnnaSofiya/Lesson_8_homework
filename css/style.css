@@ -1,0 +1,415 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Caveat:regular,700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:300,300italic,regular,700,700italic&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,italic,900,900italic");
+
+/* font-family: 'Cormorant Infant', serif; 
+font-family: 'Caveat', cursive;*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Caveat", cursive;
+	background: #f5f5f5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 50px;
+}
+/* ------------------------------ */
+body {
+	font-size: 20px;
+	background: url("../img/6.jpg") 0 0 / cover repeat;
+}
+.header {
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 900;
+}
+.header a {
+	color: blue;
+	text-shadow: 3px 3px 5px skyblue;
+}
+.header:hover a {
+	color: #000;
+	text-decoration: underline;
+	background: turquoise;
+}
+.main {
+}
+.link {
+	display: inline-block;
+	margin: 0px 130px 20px 0px;
+}
+.link *:last-child {
+	margin-left: 0px;
+}
+.link a {
+	padding: 10px;
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+.visited:hover {
+	text-shadow: 3px 3px 3px rgb(252, 3, 3);
+}
+.visited:visited {
+	color: rgb(32, 51, 32);
+}
+.focus:focus {
+	color: rgb(247, 0, 0);
+}
+.active:active {
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	box-shadow: 5px 5px 5px 5px rgb(27, 27, 27);
+}
+.img {
+	padding: 10px;
+	display: none;
+}
+.img:target {
+	display: block;
+}
+.number {
+	padding: 10px;
+}
+.number p {
+	margin: 0px 0px 20px 0px;
+	text-align: justify;
+	line-height: 24px;
+	font-size: 20px;
+	text-indent: 50px;
+}
+.number p:nth-child(even):hover {
+	color: aqua;
+	background-color: rgb(234, 238, 238, 0.5);
+}
+
+.number p:nth-child(odd) {
+	opacity: 0;
+	visibility: hidden;
+}
+.number:hover p:nth-child(odd) {
+	opacity: 1;
+	visibility: visible;
+}
+.number p:first-of-type::first-letter {
+	color: red;
+	font-size: 40px;
+	font-weight: 900;
+}
+.number p:last-of-type::first-line {
+	color: rgb(0, 243, 170);
+}
+
+.beaf div {
+	margin: 0px 0px 20px 0px;
+	width: 40%;
+	font-size: 26px;
+	text-align: center;
+}
+
+.beaf *:nth-child(even) {
+	margin: 0px 0px 0px auto;
+}
+
+.text1::before {
+	content: "";
+	display: inline-block;
+	padding: 0px 0px 0px 40px;
+	background: url("../img/2.jpg") 0 0 / cover no-repeat;
+	width: 250px;
+	height: 150px;
+}
+.text1::after {
+	content: "Белочка";
+	font-size: 35px;
+	font-weight: 700;
+	color: rgb(243, 243, 243);
+	text-shadow: 3px 3px 3px rgb(247, 191, 159);
+}
+
+.text2:hover::before {
+	content: "Lovely";
+	display: inline-block;
+	font-weight: 700;
+	font-size: 30px;
+	color: seashell;
+	padding: 0px 30px 0px 0px;
+}
+.text2:hover:after {
+	content: "";
+	display: inline-block;
+	background: url("../img/3.jpg") 0 0 / cover no-repeat;
+	width: 250px;
+	height: 150px;
+}
+.text3::before {
+	content: "";
+	display: block;
+	background: url("../img/4.jpg") 0 0 / cover no-repeat;
+	width: 300px;
+	height: 180px;
+}
+.text3:hover::after {
+	content: "Oreshka";
+	display: block;
+	font-size: 30px;
+	font-weight: 700;
+	color: maroon;
+	text-shadow: 3px 3px 3px rgb(247, 165, 159);
+}
+
+.text4::before {
+	display: block;
+	content: "";
+	background: url("../img/5.jpg") 0 0 / cover no-repeat;
+	width: 250px;
+	height: 150px;
+}
+.text4:hover::after {
+	content: "";
+	display: block;
+	background: url("../img/3.jpg") 0 0 / cover no-repeat;
+	width: 250px;
+	height: 150px;
+}
+.list,
+.list1 {
+	display: inline-block;
+	font-size: 26px;
+	margin: 0px 0px 20px 30px;
+	width: 40%;
+}
+.list li::before {
+	display: inline-block;
+	content: "";
+	width: 30px;
+	height: 30px;
+	line-height: 40px;
+	background: rgb(30, 163, 3);
+	text-shadow: 3px 3px 5px rgb(105, 255, 105);
+	margin: 3px 15px 0px 20px;
+	border-radius: 50%;
+}
+.list li:hover::before {
+	background: red;
+}
+
+.list1 li::before {
+	display: inline-block;
+	content: "/";
+	font-size: 30px;
+	width: 80px;
+	height: 70px;
+	background: url("../img/1.jpg") 0 0 / cover no-repeat;
+	margin: 5px 20px 0px 30px;
+	padding: 5px 0px 5px 0px;
+}
+.list1:hover {
+	display: inline-block;
+	content: "";
+	background: url("../img/4.jpg") 0 0 / cover no-repeat;
+}
+.list1 li:hover::before {
+	display: inline-block;
+	content: "";
+	background: honeydew;
+	width: 40px;
+	height: 15px;
+	padding: 0px 20px 0px 0px;
+}
+.block {
+	padding: 130px 250px 20px 250px;
+	background: oldlace;
+	font-family: "roboto";
+}
+.block__title {
+	margin: 0px 0px 26px 0px;
+	font-size: 0;
+}
+.block__title h2 {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	color: #5d62b5;
+	padding: 0px 0px 33px 0px;
+}
+.block__title h2::before {
+	display: inline-block;
+	content: "";
+	background: url("../img/11.png") 0 50% no-repeat;
+	width: 30px;
+	height: 30px;
+	padding: 5px 30px 0px 0px;
+	vertical-align: top;
+}
+.block__title p {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.block__menu {
+}
+.block__menu div {
+	margin: 0px 24px 0px 0px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+.imgone,
+.imgtwo,
+.imgthree {
+	display: inline-block;
+	margin: 0px 24px 0px 0px;
+	width: 63px;
+}
+.imgone::before {
+	display: inline-block;
+	content: "";
+	margin: 0px 20px 0px 0px;
+	background: url("../img/dog_love_24x.svg") 0 0 no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+}
+.imgtwo::before {
+	display: inline-block;
+	content: "";
+	margin: 0px 20px 0px 0px;
+	background: url("../img/dog_vet_24x.svg") 0 0 no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+}
+.imgthree::before {
+	display: inline-block;
+	content: "";
+	margin: 0px 20px 0px 0px;
+	background: url("../img/dog_stream_24x.svg") 0 0 no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+}
+.block__menu h2 {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 1.5;
+	color: #f2726f;
+	padding: 0px 0px 20px 0px;
+	width: 235px;
+}
+.block__menu p {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #4b4b4b;
+	width: 235px;
+}
+.block1 {
+	background: #302f2f;
+	font-family: "roboto";
+	vertical-align: top;
+	text-align: left;
+	margin: 0px auto 20px auto;
+	padding: 60px 0px 60px 0px;
+	vertical-align: top;
+}
+.block1__body {
+	background: #4b4b4b;
+	width: 255px;
+	margin: 30px auto;
+	padding: 24px 24px 60px 24px;
+}
+
+.block1__title {
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: -0.275px;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+.block1__title::after {
+	display: block;
+	content: "";
+	width: 56px;
+	height: 2px;
+	background: rgb(15, 252, 15);
+	margin: 10px 0px 24px 0px;
+}
+.block1__body:hover .block1__title::after {
+	background: rgb(15, 11, 11);
+}
+.block1__body:hover .block1__title {
+	color: rgb(15, 11, 11);
+}
+.block1__text {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1625px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.block1__body:hover .block1__text {
+	color: rgb(15, 11, 11);
+}
+.block1__body:hover {
+	background: green;
+	border-radius: 10px;
+}
+.footer {
+	font-size: 55px;
+	font-weight: 900;
+	text-align-last: left;
+	text-shadow: 3px 3px 3px gray;
+}
+.footer:hover {
+	text-shadow: 5px 5px 5px rgb(41, 38, 38);
+}
